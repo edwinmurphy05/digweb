@@ -17,7 +17,7 @@
                 Cardholder Name:
             </div>
             <div class="input-div">
-                <input type="text" name="cardholder_name" id="cardholder_name" class="payment-textbox">    
+                <input type="text" name="cardholder_name" id="cardholder_name" class="payment-textbox" value="AABB">    
             </div>
             
         <!-- </fieldset> -->
@@ -28,16 +28,16 @@
                 Billing Address:
             </div>
             <div class="input-div">
-                <input type="text" name="billing_address_1" id="billing_address_1" class="payment-textbox" placeholder="Address Line 1">                
+                <input type="text" name="billing_address_1" id="billing_address_1" class="payment-textbox" placeholder="Address Line 1" value="myAddress">                
             </div>
             <div class="input-div">
                 <input type="text" name="billing_address_2" id="billing_address_2" class="payment-textbox" placeholder="Address Line 2">                            
             </div>
             <div class="input-div">
-                <input type="text" name="billing_address_3" id="billing_address_3" class="payment-textbox" placeholder="Town">
+                <input type="text" name="billing_address_city" id="billing_address_city" class="payment-textbox" placeholder="City/Town">
             </div>
             <div class="input-div">
-                <input type="text" name="billing_address_4" id="billing_address_4" class="payment-textbox" placeholder="County">
+                <input type="text" name="billing_address_county" id="billing_address_county" class="payment-textbox" placeholder="County">
             </div>
         <!-- </fieldset> -->
 
@@ -63,10 +63,17 @@
         </div>
         <div class="input-div">
             <select name="card_type" id="card_type" class="card-select">
-                <option class="card-list">Visa</option>
-                <option class="card-list">MasterCard</option>
-                <option class="card-list">Visa Debit</option>
+                <option class="card-list" value="Visa">Visa</option>
+                <option class="card-list" value="Mastercard">MasterCard</option>
+                <option class="card-list" value="Visa Debit">Visa Debit</option>
             </select>
+        </div>
+
+        <div class="input-label">
+            Card Number:
+        </div>
+        <div class="input-div">
+                <input type="number" name="card_no" id="card_no" class="payment-textbox" placeholder="">
         </div>
 
         <div class="input-label">
@@ -104,7 +111,7 @@
             </div>
             
             <div class="span32">
-                <input type="number" name="cc_no" id="cc_no" class="payment-textbox">                
+                <input type="number" name="cvv_no" id="cvv_no" class="payment-textbox">                
             </div>
 
         </div>
@@ -202,7 +209,7 @@
             Amount to Pay:
         </div>
         <div class="input-div">
-            <input type="number" name="payment_amt" id="payment_amt" class="payment-textbox">
+            <input type="number" name="payment_amount" id="payment_amount" class="payment-textbox">
         </div>
 
         <p class="confirm-payment-note">
@@ -211,7 +218,7 @@
 
         <!-- <input type="submit" value="Pay"> -->
 
-        <button type="button" class="submit-payment-xxx" id="submit_payment">Make Payment</button>
+        <button type="button" class="submit-payment-xxx" id="submit_payment">Submit Payment</button>
 
     </form>
 
