@@ -1,0 +1,218 @@
+<div data-role="content" class="payment-container">
+    <div>
+        <h3 class="page-title-heading">Make a Payment</h3>
+        <p>
+            Your balance is €<span id="payment_balance">{{payment_balance}}</span>.
+        </p>
+        <p>
+            Please use the form below to make a payment.
+        </p>
+    </div>
+
+    <form id="payment_form">
+
+        <!-- <fieldset data-role="controlgroup"> -->
+            <!-- <label for="cardholder_name">Cardholder Name:</label> -->
+            <div class="input-label">
+                Cardholder Name:
+            </div>
+            <div class="input-div">
+                <input type="text" name="cardholder_name" id="cardholder_name" class="payment-textbox">    
+            </div>
+            
+        <!-- </fieldset> -->
+
+        <!-- <fieldset data-role="controlgroup"> -->
+            <!-- <label for="billing_address_1">Billing Address:</label> -->
+            <div class="input-label">
+                Billing Address:
+            </div>
+            <div class="input-div">
+                <input type="text" name="billing_address_1" id="billing_address_1" class="payment-textbox" placeholder="Address Line 1">                
+            </div>
+            <div class="input-div">
+                <input type="text" name="billing_address_2" id="billing_address_2" class="payment-textbox" placeholder="Address Line 2">                            
+            </div>
+            <div class="input-div">
+                <input type="text" name="billing_address_3" id="billing_address_3" class="payment-textbox" placeholder="Town">
+            </div>
+            <div class="input-div">
+                <input type="text" name="billing_address_4" id="billing_address_4" class="payment-textbox" placeholder="County">
+            </div>
+        <!-- </fieldset> -->
+
+        <!-- <span>
+            Card Type:
+        </span>
+        <div class="accordion-container ac-card" id="card_select">
+           
+            <div id="accordion1" class="accordion-parent">
+                <span class="drop-menu-text">Tap to select</span>
+                <span class="drop-menu-icon"></span>
+            </div>
+            
+            <div class="accordion-child" id="accordion_child_1">
+                <span class="accordion-li card-list">Visa</span>
+                <span class="accordion-li card-list">MasterCard</span>
+                <span class="accordion-li card-list">Visa Debit</span>
+            </div>
+        </div> -->
+
+        <div class="input-label">
+            Card Type:
+        </div>
+        <div class="input-div">
+            <select name="card_type" id="card_type" class="card-select">
+                <option class="card-list">Visa</option>
+                <option class="card-list">MasterCard</option>
+                <option class="card-list">Visa Debit</option>
+            </select>
+        </div>
+
+        <div class="input-label">
+            <div class="span65"><span>Expiry Date</span></div>
+            <div class="span35"><span>CVV No.</span></div>            
+        </div>
+
+        <div class="input-div">
+
+            <div class="span32">
+                <select name="expiry_month" id="expiry_month" class="month-select">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            
+            <div class="span32">
+                <select name="expiry_year" id="expiry_year" class="year-select">
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                </select>
+            </div>
+            
+            <div class="span32">
+                <input type="number" name="cc_no" id="cc_no" class="payment-textbox">                
+            </div>
+
+        </div>
+
+        
+
+        <!-- <fieldset data-role="controlgroup">                    
+            <label for="cc_no">Card Number:</label>
+            <input type="number" name="cc_no" id="cc_no" class="payment-textbox">
+        </fieldset>
+
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <span>
+                    Expiry:
+                </span>
+            </div>
+            <div class="ui-block-b">
+                <span>
+                    
+                </span>                            
+            </div>
+            <div class="ui-block-c">
+                <span>
+                    CVV2 No.
+                </span>                            
+            </div>
+        </div>
+
+
+        <div class="ui-grid-b">
+            <div class="ui-block-a">                            
+                <div class="accordion-container ac-expiry" id="month_select">
+                    
+                    <div id="accordion2" class="accordion-parent">
+                        <span class="drop-menu-text">Month</span>
+                        <span class="drop-menu-icon"></span>
+                    </div>
+
+                    <div class="accordion-child" id="accordion_child_2">
+                        <span class="accordion-li month-list">01</span>
+                        <span class="accordion-li month-list">02</span>
+                        <span class="accordion-li month-list">03</span>
+                        <span class="accordion-li month-list">04</span>
+                        <span class="accordion-li month-list">05</span>
+                        <span class="accordion-li month-list">06</span>
+                        <span class="accordion-li month-list">07</span>
+                        <span class="accordion-li month-list">08</span>
+                        <span class="accordion-li month-list">09</span>
+                        <span class="accordion-li month-list">10</span>
+                        <span class="accordion-li month-list">11</span>
+                        <span class="accordion-li month-list">12</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="ui-block-b">
+                <div class="accordion-container ac-expiry" id="year_select">
+                    
+                    <div id="accordion3" class="accordion-parent">
+                        <span class="drop-menu-text">Year</span>
+                        <span class="drop-menu-icon"></span>
+                    </div>
+                    
+                    <div class="accordion-child" id="accordion_child_3">
+                        <span class="accordion-li year-list">2013</span>
+                        <span class="accordion-li year-list">2014</span>
+                        <span class="accordion-li year-list">2015</span>
+                        <span class="accordion-li year-list">2016</span>
+                        <span class="accordion-li year-list">2017</span>
+                        <span class="accordion-li year-list">2018</span>
+                        <span class="accordion-li year-list">2019</span>
+                        <span class="accordion-li year-list">2020</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="ui-block-c">
+                <fieldset data-role="controlgroup">
+                    <input type="number" name="cvv2_no" id="cvv2_no" class="payment-textbox">
+                </fieldset>
+            </div>
+        </div> -->
+
+        <!-- <div class="">
+            <fieldset data-role="controlgroup">                    
+                <label for="payment_amt">Amount to Pay:</label>
+                <input type="number" name="payment_amt" id="payment_amt" class="payment-textbox">
+            </fieldset>
+        </div> -->
+
+        <div class="input-label">
+            Amount to Pay:
+        </div>
+        <div class="input-div">
+            <input type="number" name="payment_amt" id="payment_amt" class="payment-textbox">
+        </div>
+
+        <p class="confirm-payment-note">
+            By clicking the <span class="cpn-bold">Pay</span> button you authorise DigiWeb to deduct the given amount from your account.
+        </p>
+
+        <!-- <input type="submit" value="Pay"> -->
+
+        <button type="button" class="submit-payment-xxx" id="submit_payment">Make Payment</button>
+
+    </form>
+
+</div>

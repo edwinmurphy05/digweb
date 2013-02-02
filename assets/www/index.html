@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- BASIC PAGE SETTINGS -->
+        <meta charset="UTF-8">            
+        <title>my Mobile DigiWeb</title>            
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+        <meta charset="utf-8">
+
+        <!-- STYLESHEETS -->  
+        <!-- jQuery Mobile stylesheet -->
+        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.0.1.min.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="jquery.mobile-1.0a3.min.css" /> -->
+        <!-- Standard stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style/digiweb_style.css" /> 
+        <!-- iPad/iPhone specific css below, add after your main css >
+        <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
+        <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
+        -->
+        <!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+        
+        <!-- JAVASCRIPT -->
+        <!-- Custom button handlers -->
+        <script type="text/javascript" charset="utf-8" src="js/digiweb_js.js"></script> 
+        <!-- Phonegap JS -->
+        <script type="text/javascript" charset="utf-8" src="js/cordova-1.9.0.js"></script>               
+        <!-- jQuery standard library -->
+        <script src="js/jquery-1.5.min.js" type="text/javascript"></script>
+        
+        <!-- Overrides -->
+        <script type="text/javascript">
+
+            $(document).bind('mobileinit', function(){
+                // Place overrides here...
+                jQuery.support.cors = true;
+                $.mobile.allowCrossDomainPages = true;
+                // $('#account_container').load('login_form.html')
+                $.mobile.defaultPageTransition = 'none';
+                $.mobile.defaultDialogTransition = 'none';
+                $.mobile.useFastClick = true;
+                $.mobile.loadingMessage = "please fucking wait...";
+            })
+
+        </script>
+        
+        <!-- jQuery mobile JS library -->
+        <script src="js/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+
+    </head>
+    
+    <body onload="armButtons()">
+        
+        <!-- HOME PAGE: #page1 -->
+        <div data-role="page" id="page1" data-theme="a">
+            
+            <div data-role="header" data-backbtn="false" id="account_header">
+                <!-- <h1>My Mobile DigiWeb</h1> -->
+                <img src="style/digiweb_logo_01.jpg" class="header-logo">
+            </div>
+           
+            <div data-role="content">
+
+                <div id="account_container">
+
+                    <!-- Container for the Login and Account Overview pages -->
+
+                </div>
+
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-c">
+                    <!-- <a href="#page1" data-transition="none"> -->
+                        <div class="ui-block-a nav-option nav-account nav-account-active nav-active"><span></span></div>
+                    <!-- </a> -->
+                    <a href="#page2" data-transition="none">
+                        <div class="ui-block-b nav-option nav-faq"><span></span></div>
+                    </a>
+                    <a href="#page3" data-transition="none">
+                        <div class="ui-block-c nav-option nav-offers"><span></span></div>
+                    </a>
+                    <a href="#page4" data-transition="none">
+                        <div class="ui-block-c nav-option nav-help"><span></span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ: #page2 -->
+        <div data-role="page" id="page2" data-theme="a">
+            
+            <div data-role="header" data-backbtn="false">
+                <!-- <h1>FAQ</h1> -->
+                <img src="style/digiweb_logo_01.jpg" class="header-logo">
+
+            </div>
+            
+            <div data-role="content" class="">
+                <h3>FAQ</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+               
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-c">
+                    <a href="#page1" data-transition="none">
+                        <div class="ui-block-a nav-option nav-account"><span></span></div>
+                    </a>
+                    <!-- <a href="#page2" data-transition="none"> -->
+                        <div class="ui-block-b nav-option nav-faq nav-faq-active nav-active"><span></span></div>
+                    <!-- </a> -->
+                    <a href="#page3" data-transition="none">
+                        <div class="ui-block-c nav-option nav-offers"><span></span></div>
+                    </a>
+                    <a href="#page4" data-transition="none">
+                        <div class="ui-block-c nav-option nav-help"><span></span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offers: #page3 -->
+        <div data-role="page" id="page3" data-theme="a">            
+            
+            <div data-role="header" data-backbtn="false">                
+                <!-- <h1>Latest Offers</h1> -->
+                <img src="style/digiweb_logo_01.jpg" class="header-logo">
+            </div>
+            
+            <div data-role="content" class="">                          
+                <h3>Latest Offers</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-c">
+                    <a href="#page1" data-transition="none">
+                        <div class="ui-block-a nav-option nav-account"><span></span></div>
+                    </a>
+                    <a href="#page2" data-transition="none">
+                        <div class="ui-block-b nav-option nav-faq"><span></span></div>
+                    </a>
+                    <!-- <a href="#page3" data-transition="none"> -->
+                        <div class="ui-block-c nav-option nav-offers nav-offers-active nav-active"><span></span></div>
+                    <!-- </a> -->
+                    <a href="#page4" data-transition="none">
+                        <div class="ui-block-c nav-option nav-help"><span></span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- About: #page4 -->
+        <div data-role="page" id="page4" data-theme="a">            
+            
+            <div data-role="header" data-backbtn="false">                
+                <!-- <h1>About</h1> -->
+                <img src="style/digiweb_logo_01.jpg" class="header-logo">
+
+            </div>
+            
+            <div data-role="content" class="">                          
+                <h3>About</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-c">
+                    <a href="#page1" data-transition="none">
+                        <div class="ui-block-a nav-option nav-account"><span></span></div>
+                    </a>
+                    <a href="#page2" data-transition="none">
+                        <div class="ui-block-b nav-option nav-faq"><span></span></div>
+                    </a>
+                    <a href="#page3" data-transition="none">
+                        <div class="ui-block-c nav-option nav-offers"><span></span></div>
+                    </a>
+                    <!-- <a href="#page4" data-transition="none"> -->
+                        <div class="ui-block-c nav-option nav-help nav-help-active nav-active"><span></span></div>
+                    <!-- </a> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ******************* THESE ARE THE SECURE ACCOUNT PAGES ********************************* -->
+
+        <!-- Account Details: #account_info -->
+        <div data-role="page" id="account_info" data-theme="b">
+            
+            <div data-role="header" data-backbtn="false">
+                <h1>Account Balance</h1>
+                <a href="#page1" id="" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">Logout</a> 
+            </div>
+            
+            <div data-role="content" class="">                          
+                <div class="account-balance" id="account_balance">
+                    <p>
+                        Your balance is: €34.58
+                    </p>
+                </div>
+                <div class="">
+                    <a id="payment_link" href="#make_payment" data-role="button" data-inline="false">Make a Payment</a>
+                </div>
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-c">
+                    <a href="#page1">
+                        <div class="ui-block-a nav-option">Account</div>
+                    </a>
+                    <a href="#page2">
+                        <div class="ui-block-b nav-option">FAQ</div>
+                    </a>
+                    <a href="#page3">
+                        <div class="ui-block-c nav-option">Offers</div>
+                    </a>
+                    <a href="#page4">
+                        <div class="ui-block-c nav-option">Help</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment: #make_payment -->
+        <div data-role="page" id="make_payment" data-theme="b">            
+            
+            <div data-role="header" data-backbtn="false">
+                <!-- <h1>Make a Payment</h1> -->
+                <img src="style/digiweb_logo_01.jpg" class="header-logo">
+                <a href="#page1" id="logout_button" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">Logout</a>
+            </div>
+            
+            <div data-role="content" class="payment-container">
+                <div>
+                    <p>
+                        Your balance is €<span id="payment_balance">50.00</span>.
+                    </p>
+                    <p>
+                        Please use the form below to make a payment.
+                    </p>
+                </div>
+                
+                <form id="payment_form">
+
+                    <fieldset data-role="controlgroup">
+                        <label for="cardholder_name">Cardholder Name:</label>
+                        <input type="text" name="cardholder_name" id="cardholder_name" class="payment-textbox">
+                    </fieldset>
+
+                    <fieldset data-role="controlgroup">
+                        <label for="billing_address_1">Billing Address:</label>
+                        <input type="text" name="billing_address_1" id="billing_address_1" class="payment-textbox" placeholder="Address Line 1">
+                        <p>
+                            <input type="text" name="billing_address_2" id="billing_address_2" class="payment-textbox" placeholder="Address Line 2">                            
+                        </p>
+                        <p>
+                            <input type="text" name="billing_address_3" id="billing_address_3" class="payment-textbox" placeholder="Town">
+                        </p>
+                        <p>
+                            <input type="text" name="billing_address_4" id="billing_address_4" class="payment-textbox" placeholder="County">
+                        </p>
+                    </fieldset>
+
+                    <span>
+                        Card Type:
+                    </span>
+                    <div class="accordion-container ac-card" id="card_select">
+                       
+                        <div id="accordion1" class="accordion-parent">
+                            <span class="drop-menu-text">Tap to select</span>
+                            <span class="drop-menu-icon"></span>
+                        </div>
+                        
+                        <div class="accordion-child" id="accordion_child_1">
+                            <span class="accordion-li card-list">Visa</span>
+                            <span class="accordion-li card-list">MasterCard</span>
+                            <span class="accordion-li card-list">Visa Debit</span>
+                        </div>
+
+                    </div>
+
+                    <fieldset data-role="controlgroup">                    
+                        <label for="cc_no">Card Number:</label>
+                        <input type="number" name="cc_no" id="cc_no" class="payment-textbox">
+                    </fieldset>
+
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <span>
+                                Expiry:
+                            </span>
+                        </div>
+                        <div class="ui-block-b">
+                            <span>
+                                
+                            </span>                            
+                        </div>
+                        <div class="ui-block-c">
+                            <span>
+                                CVV2 No.
+                            </span>                            
+                        </div>
+                    </div>
+
+
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">                            
+                            <div class="accordion-container ac-expiry" id="month_select">
+                                
+                                <div id="accordion2" class="accordion-parent">
+                                    <span class="drop-menu-text">Month</span>
+                                    <span class="drop-menu-icon"></span>
+                                </div>
+
+                                <div class="accordion-child" id="accordion_child_2">
+                                    <span class="accordion-li month-list">01</span>
+                                    <span class="accordion-li month-list">02</span>
+                                    <span class="accordion-li month-list">03</span>
+                                    <span class="accordion-li month-list">04</span>
+                                    <span class="accordion-li month-list">05</span>
+                                    <span class="accordion-li month-list">06</span>
+                                    <span class="accordion-li month-list">07</span>
+                                    <span class="accordion-li month-list">08</span>
+                                    <span class="accordion-li month-list">09</span>
+                                    <span class="accordion-li month-list">10</span>
+                                    <span class="accordion-li month-list">11</span>
+                                    <span class="accordion-li month-list">12</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="ui-block-b">
+                            <div class="accordion-container ac-expiry" id="year_select">
+                                
+                                <div id="accordion3" class="accordion-parent">
+                                    <span class="drop-menu-text">Year</span>
+                                    <span class="drop-menu-icon"></span>
+                                </div>
+                                
+                                <div class="accordion-child" id="accordion_child_3">
+                                    <span class="accordion-li year-list">2013</span>
+                                    <span class="accordion-li year-list">2014</span>
+                                    <span class="accordion-li year-list">2015</span>
+                                    <span class="accordion-li year-list">2016</span>
+                                    <span class="accordion-li year-list">2017</span>
+                                    <span class="accordion-li year-list">2018</span>
+                                    <span class="accordion-li year-list">2019</span>
+                                    <span class="accordion-li year-list">2020</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="ui-block-c">
+                            <fieldset data-role="controlgroup">                    
+                                <!-- <label for="cvv2_no">CVV2 Number:</label> -->
+                                <input type="number" name="cvv2_no" id="cvv2_no" class="payment-textbox">
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <fieldset data-role="controlgroup">                    
+                            <label for="payment_amt">Amount to Pay:</label>
+                            <input type="number" name="payment_amt" id="payment_amt" class="payment-textbox">
+                        </fieldset>
+                    </div>
+
+                    <p class="confirm-payment-note">
+                        By clicking the <span class="cpn-bold">Pay</span> button you authorise DigiWeb to deduct the given amount from your account.
+                    </p>
+
+                    <!-- <input type="submit" value="Pay"> -->
+
+                    <button type="button" class="submit-payment-xxx" id="submit_payment">Make Payment</button>
+
+                </form>
+
+            </div>
+
+        </div>        
+    </body>
+    
+</html>

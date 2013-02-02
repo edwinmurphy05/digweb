@@ -1,0 +1,54 @@
+<div class="account-balance" id="account_balance">
+	<h3 class="page-title-heading">Account Overview</h3>
+	<div class="account-username">
+		Hello {{username}}
+	</div>
+
+	<!-- DISPLAY CURRENT BALANCE -->
+	<table class="account-overview-table current-balance">
+		<tr>
+			<td class="table-align-left">Current Balance:</td>
+			<td class="table-align-right">€ {{current_balance}}</td>
+		</tr>
+	</table>
+
+	<!-- NEXT PAYMENT DETAILS -->
+	<table class="account-overview-table next-payment">
+		<tr>
+			<th class="table-align-left" colspan=2>Next Payment:</th>
+		</tr>
+		<tr>
+			<td class="table-align-left">Amount due</td>
+			<td class="table-align-right">&euro; NONE</td>
+		</tr>
+		<tr>
+			<td class="table-align-left">Date due</td>
+			<td class="table-align-right">DD MM YYYY</td>
+		</tr>
+	</table>
+
+	<!-- MAKE PAYMENT BUTTON -->
+	<div class="payment-button-container">
+		<button class="payment-button" id="payment_button" href="index.html">MAKE A PAYMENT</button>
+	</div>
+
+	<p>
+		<!-- <a href="payment_template.html">Payments</a> -->
+	</p>
+
+	<!-- LAST PAYMENT DETAILS -->
+	<table class="account-overview-table last-payment">
+		<tr>
+			<th class="table-align-left" colspan=2>Last Payment Details</th>
+		</tr>
+		<tr>
+			<td class="table-align-left">Amount paid</td>
+			<td class="table-align-right">&euro; {{last_payment_amt}}</td>
+		</tr>
+		<tr>
+			<td class="table-align-left">Date recieved</td>
+			<td class="table-align-right">{{last_payment_day}} {{last_payment_month}} {{last_payment_year}}</td>
+		</tr>
+	</table>
+
+</div>

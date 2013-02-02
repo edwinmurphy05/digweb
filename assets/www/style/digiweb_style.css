@@ -1,0 +1,447 @@
+/*
+* Color shceme:
+* Lightest blue - rgb(30, 194, 255) - 1EC2FF
+* Main blue - rgb(0,164,255) - 00A4FF
+* Dark Blue - rgb(0,134,225) - 0086E1
+*
+*/
+
+@font-face {
+    /*font-family: myAvenir;*/
+    /*src: url("..style/fonts/BigCaslon.ttf");*/
+}
+
+* {
+    font-family: Avenir !important;
+    text-shadow: none;  
+}
+
+body {
+    background: black !important;
+    /*backsground: rgb(0,164,255) !important;*/
+}
+
+[data-role=header] {
+    background: white !important;
+    border: none;
+    /*box-shadow: 0px 0px 5px 3px rgb(0,135,235) !important;*/
+}
+
+[data-role=page]{
+    height: 100% !important;
+    position:relative !important;
+    /*background-color: black !important;*/
+    /*background: rgb(0,164,255) !important;*/
+    background: #4fd0ff;
+    background: -moz-radial-gradient(center, ellipse cover,  #4fd0ff 0%, #00a4ff 80%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4fd0ff), color-stop(80%,#00a4ff));
+    background: -webkit-radial-gradient(center, ellipse cover,  #4fd0ff 0%,#00a4ff 80%);
+    background: -o-radial-gradient(center, ellipse cover,  #4fd0ff 0%,#00a4ff 80%);
+    background: -ms-radial-gradient(center, ellipse cover,  #4fd0ff 0%,#00a4ff 80%);
+    background: radial-gradient(ellipse at center,  #4fd0ff 0%,#00a4ff 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd0ff', endColorstr='#00a4ff',GradientType=1 );
+    background: black;
+}
+
+
+[data-role=footer]{
+    bottom:0;
+    position:absolute !important;
+    top: auto !important;
+    width:100%;
+    background: transparent !important;
+    background: rgb(0,164,255) !important;
+    border: none;
+}
+
+[data-role=content]{
+    /*background-color: black;*/
+    /*background: rgb(0,164,255) !important;*/
+    background: #4fd0ff;
+    background: -moz-radial-gradient(center, ellipse cover,  #4fd0ff 0%, #00a4ff 80%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4fd0ff), color-stop(80%,#00a4ff));
+    background: -webkit-radial-gradient(center, ellipse cover,  #4fd0ff 0%,#00a4ff 80%);
+    background: -o-radial-gradient(center, ellipse cover,  #4fd0ff 0%,#00a4ff 80%);
+    background: -ms-radial-gradient(center, ellipse cover,  #4fd0ff 0%,#00a4ff 80%);
+    background: radial-gradient(ellipse at center,  #4fd0ff 0%,#00a4ff 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd0ff', endColorstr='#00a4ff',GradientType=1 );
+    background: black;
+    height: 80%;
+    overflow: hidden;
+}
+
+.payment-container {
+    height: 120%;
+}
+
+.header-logo {
+    margin-left: 70px;
+    /*left: 50%;*/
+    padding: 7px;
+    height: 35px;
+
+}
+
+/*.account_container {
+    height:100%;
+}*/
+
+/*.payment-button {
+    font-size: 10px;
+    height:50px;
+    padding: 4px;
+    background-image: url('1account-grey_btn.png');
+}*/
+
+.login-button, .payment-button, .submit-payment {
+    font-size: 14px;
+    font-weight: bold;
+    height:40px;
+    width: 130px;
+    border: solid 0px silver;
+    color: #eee;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:0px;
+    -moz-border-radius:0px;
+    background: -moz-linear-gradient(top, #5E5E5E 0%, #474747 51%, #0a0e0a 51%, #0a0809 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5E5E5E), color-stop(51%,#474747), color-stop(51%,#0a0e0a), color-stop(100%,#0a0809));
+    background: #0086E1;
+    /*text-shadow: 0px 0px 5px gray;*/
+    font-family: Avenir !important;
+    text-transform: uppercase;
+    /*font-weight: normal;*/
+    /*border-top: solid 1px rgb(60, 234, 255); 
+    border-right: solid 1px rgb(00, 134, 195);
+    border-bottom: solid 1px rgb(00, 134, 195);
+    border-left: solid 1px rgb(60, 234, 255);*/
+}
+
+.payment-button {
+    width: 100%;
+}
+
+.payment-button:active, .login-button:active, .submit-payment:active {
+    color: #0a0809;
+    color: silver;
+    /*text-shadow: 0px 0px 2px black;*/
+    background: -moz-linear-gradient(bottom, #5E5E5E 0%, #0a0809 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#5E5E5E), color-stop(100%,#0a0809));
+    background: rgb(0, 135, 225);
+    /*text-shadow: 0px 0px 5px gray;*/
+}
+
+.login-button {
+    margin-top: 10px;
+}
+
+#make_payment {
+    height: 200% !important;
+}
+
+[data-role=button]{
+    border-radius: 5px;
+}
+
+[data-role=button] span {
+    border-radius: 5px;
+}
+
+
+
+/*.submit-button {
+    border-radius: 5px !important;
+    color: green !important;
+    float:right;
+}*/
+
+input, .ui-btn, .ui-btn span {
+    border-radius: 0px !important;
+}
+
+input {
+}
+
+input, input:focus {
+
+}
+
+select {
+    background: rgb(30, 194, 255) !important;
+    color: black !important;
+}
+
+
+.nav-option {
+    height: 70px;
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*border: 1px solid white;*/
+    background: -moz-linear-gradient(bottom, #5E5E5E 0%, #0a0809 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#5E5E5E), color-stop(100%,#0a0809));
+    background: rgb(0, 134, 195);
+    background: rgb(50,50,50);
+    border-top: 3px solid #00A4FF;
+}
+
+.nav-option span {
+    float: left;
+    margin-left: 24px;
+    margin-top: 16px;
+    height: 36px;
+    width: 36px;
+    background: url("../js/images/icons-36-white.png") no-repeat;
+    background-position: -576px 50%;
+}
+
+/*.nav-option:hover {
+    background-color: gainsboro;
+}*/
+
+.nav-active {
+    /*background: transparent;*/
+    background: rgb(0,164,255) !important;
+    /*background: black !important;*/
+}
+
+.nav-account {
+    /*background-image: url('1account-grey_btn.png');*/
+}
+
+.nav-faq {
+    /*background-image: url('2faq-grey_btn.png');*/
+}
+
+.nav-offers {
+    /*background-image: url('3offers-grey_btn.png');*/
+}
+
+.nav-help {
+    /*background-image: url('4about-grey_btn.png');*/
+}
+
+.nav-account-active {
+    /*background-image: url('1account-green_btn.png');*/
+    background: rgb(0,164,255);
+    /*background: black;*/
+}
+
+.nav-faq-active {
+    /*background-image: url('2faq-green_btn.png');*/
+    background: rgb(0,164,255);
+    /*background: black;*/
+}
+
+.nav-offers-active {
+    /*background-image: url('3offers-green_btn.png');*/
+    background: rgb(0,164,255);
+    /*background: black;*/
+}
+
+.nav-help-active {
+    /*background-image: url('4about-green_btn.png');*/
+    background: rgb(0,164,255);
+    /*background: black;*/
+}
+
+.balance-amount {
+    text-align: center;
+}
+
+/******************** ACCOUNT OVERVIEW PAGE *************************/
+.page-title-heading {
+    margin: 0px 0px;
+    font-size: 20px;
+}
+
+.account-username {
+    font-size: 14px;
+}
+
+.account-overview-table {
+    width: 100%;
+    padding: 1px 0px;
+}
+
+.account-overview-table th {
+    border-bottom: 0px solid #0086C3; /* NEED TO INSERT DARK BLUE HERE */
+}
+
+.current-balance {
+    /*background: #1EC2FF;  NEED TO INSERT DARK BLUE HERE */
+    border-top: 1px solid #0086E1;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid #0086E1;
+    border-bottom: 1px solid gainsboro;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 6px 3px;
+    margin: 15px 0px;
+}
+
+.next-payment * {
+    padding: 0px;
+    color: black;
+    color: gainsboro;
+    font-size: 14px;
+}
+
+.last-payment * {
+    padding: 0px;
+    color: black;
+    color: gainsboro;
+    font-size: 11px;
+}
+
+.table-align-left {
+    text-align: left;
+}
+
+.table-align-right {
+    text-align: right;
+}
+
+.payment-button-container {
+    margin: 20px 0px;
+}
+
+.logout-button {
+    float: right;
+    margin-right: 14px;
+    margin-top: 13px;
+    font-size: 14px;
+    /*height:20px;*/
+    padding: 3px 7px;
+    border: solid 1px #2E2E2E;
+    color: #eee;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    background: -moz-linear-gradient(top, #5E5E5E 0%, #474747 51%, #0a0e0a 51%, #0a0809 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5E5E5E), color-stop(51%,#474747), color-stop(51%,#0a0e0a), color-stop(100%,#0a0809));
+    background: black;
+    text-shadow: 0px 0px 5px gray;
+}
+
+.welcome-note {
+    font-size: 24px;
+    text-shadow: none !important;
+    font-family: Avenir;
+    margin-bottom: 30px;
+
+}
+
+/********** PAYMENT FORM *********/
+
+.accordion-container {
+    /*background: rgb(30, 194, 255);*/
+    margin-top: 8px;    
+    line-height: 1.6;
+    /*border-top: 1px solid white;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid white;*/
+    border-radius: 4px;
+}
+
+.ac-card {
+
+}
+
+.ac-expiry {
+    width: 90%;
+}
+
+.accordion-parent {
+    background: #0086E1;
+    padding: 5px 5px;
+}
+
+.accordion-child {
+    background: #0086E1;
+    display: none;
+    position:absolute;
+    min-width: 27%;
+    z-index: 5;
+}
+
+.accordion-li {
+    padding: 9px 5px 8px;
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgb(0,164,255);
+    /*border-bottom: 1px solid black;*/
+}
+
+.expiry-cols {
+    display: block;
+    list-style: disc inside none;
+}
+
+.drop-menu-icon {
+    margin-top: 3px;
+    float:right;
+    height: 18px;
+    width: 18px;
+    background: url("../js/images/icons-18-white.png") no-repeat;
+    background-position: -216px 50%;
+    /*background-size: 50%;*/
+}
+
+.dmi-expanded {
+    background-position: -181px 50%;
+}
+
+
+.login-textbox, .payment-textbox {
+    width: 80%;
+    background: rgb(255,255,255) !important;
+    font-size: 16px;
+    font-style: italic;
+    outline: none;
+    border-style: none;
+    padding: 8px 20px;
+    color: #7F7F7F;
+    text-shadow: none;
+}
+
+.confirm-payment-note {
+    text-align: center;
+    font-style: italic;
+}
+
+.confirm-payment-note span {
+    font-weight: bold;
+}
+
+.input-label{
+    width: 100%;
+    color: white;
+    margin-top: 17px;
+    margin-bottom: 4px;
+}
+
+.input-div {
+    width: 100%;
+}
+
+.input-div select {
+    width: 80%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.span32 {
+    float: left;
+    width: 32%;
+}
+
+.span35 {
+    float: left;
+    width: 35%;    
+}
+
+.span65 {
+    float: left;
+    width: 65%;
+}
