@@ -69,13 +69,25 @@ body {
     overflow: hidden;
 }
 
-/************************************************************************************/
+[data-role=button]{
+    border-radius: 5px;
+}
+
+[data-role=button] span {
+    border-radius: 5px;
+}
+
+/**************************************** DATA-ROLE="CONTENT" ********************************************/
+
 .content-div-account {
 
 }
 
 .content-div-faq {
-
+/*    position: relative;
+    width: 100%;
+    height: 85%;*/
+    overflow: scroll;
 }
 
 .content-div-offers {
@@ -86,6 +98,29 @@ body {
 
 }
 
+/**************************************** COLLAPSIBLE ********************************************/
+
+.collapsible-faq-item {
+    /*border-style: none;*/
+}
+
+.collapsible-faq-item * {
+    /*background-color: #0086E1 !important;*/
+}
+
+.ui-collapsible-content, .ui-collapsible-content p {
+    background-color: transparent !important;
+}
+
+.collapsible-faq-item span.ui-btn {
+    /*display: none;*/
+}
+
+.faq-heading * {
+    font-weight: normal !important;
+}
+
+/************************************/
 
 .payment-container {
     height: 120%;
@@ -109,6 +144,8 @@ body {
     padding: 4px;
     background-image: url('1account-grey_btn.png');
 }*/
+
+/**************************************** BUTTONS ********************************************/
 
 .login-button, .payment-button, .submit-payment {
     font-size: 14px;
@@ -156,16 +193,6 @@ body {
     height: 200% !important;
 }
 
-[data-role=button]{
-    border-radius: 5px;
-}
-
-[data-role=button] span {
-    border-radius: 5px;
-}
-
-
-
 /*.submit-button {
     border-radius: 5px !important;
     color: green !important;
@@ -198,8 +225,8 @@ select {
     background: -moz-linear-gradient(bottom, #5E5E5E 0%, #0a0809 100%);
     background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#5E5E5E), color-stop(100%,#0a0809));
     background: rgb(0, 134, 195);
-    background: rgb(0,0,0);
-    border-top: 6px solid #000;
+    background: rgb(30,30,30);
+    border-top: 6px solid rgb(30,30,30);
     background-repeat: no-repeat;
     background-size: 100%;
 }
