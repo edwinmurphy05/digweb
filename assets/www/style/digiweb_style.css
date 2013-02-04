@@ -181,7 +181,7 @@ body {
     /*text-shadow: 0px 0px 2px black;*/
     background: -moz-linear-gradient(bottom, #5E5E5E 0%, #0a0809 100%);
     background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#5E5E5E), color-stop(100%,#0a0809));
-    background: rgb(0, 135, 225);
+    /*background: rgb(0, 135, 225);*/
     /*text-shadow: 0px 0px 5px gray;*/
 }
 
@@ -215,6 +215,7 @@ select {
     color: black !important;
 }
 
+/**************************************** NAV OPTION ********************************************/
 
 .nav-option {
     height: 70px;
@@ -225,18 +226,23 @@ select {
     background: -moz-linear-gradient(bottom, #5E5E5E 0%, #0a0809 100%);
     background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#5E5E5E), color-stop(100%,#0a0809));
     background: rgb(0, 134, 195);
-    background: rgb(30,30,30);
-    border-top: 6px solid rgb(30,30,30);
+    background: rgb(0,0,0);
+    border-top: 6px solid rgb(0,0,0);
     background-repeat: no-repeat;
     background-size: 100%;
+    
+    /*border-left-width: 1px;*/
+    /*border-style: solid;*/
+    /*border-color: gray;*/
 }
 
 .nav-option span {
-    float: left;
-    margin-left: 24px;
-    margin-top: 16px;
-    height: 36px;
-    width: 36px;
+    float: right;
+    height: 100%;
+    width: 100%;
+   /* border-right: 1px solid gray;
+    border-left: 1px solid black;*/
+
     /*background: url("../js/images/icons-36-white.png") no-repeat;*/
     /*background-position: -576px 50%;*/
 }
@@ -249,6 +255,7 @@ select {
     /*background: transparent;*/
     /*background-color: rgb(0,164,255) !important;*/
     border-top: 6px solid #00A4FF;
+    /*background-color: black;*/
     /*background: black !important;*/
 }
 
