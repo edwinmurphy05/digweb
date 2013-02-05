@@ -82,8 +82,8 @@ body {
 }
 
 input {
-    border: 2px solid rgb(10,65,146);
-    border-radius: 4px;
+    /*border: 2px solid rgb(10,65,146);
+    border-radius: 4px;*/
     background: black !important;
     box-shadow: 0px 0px 8px gray inset !important;
 }
@@ -156,7 +156,7 @@ input {
     background-image: url('1account-grey_btn.png');
 }*/
 
-/**************************************** BUTTONS ********************************************/
+/**************************************** BUTTONS & FORM ELEMENTS ********************************************/
 
 .login-button, .payment-button, .submit-payment {
     font-size: 14px;
